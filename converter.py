@@ -11,7 +11,7 @@ class Course(QObject):
     def get(self):
         return 30.0
 
-class CurrencyConverter(QMainWindow): #нвследуемся от QMainWindow
+class CurrencyConverter(QMainWindow):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
@@ -34,7 +34,6 @@ class CurrencyConverter(QMainWindow): #нвследуемся от QMainWindow
         #self.resultAmount.setDisabled(True)
 
         self.convertBtn = QPushButton('Перевести', self)
-        #self.convertBtn.setDisabled(True) # блокировка
 
         self.resetBtn = QPushButton('Очистить', self)
 
@@ -80,8 +79,3 @@ if __name__ == '__main__':
     converter.show()
 
     sys.exit(app.exec_())
-
-#кнопка очистить
-#блокировать кнопку перевести при 0 и непонятностях
-#конвертер должен работать в две стороны
-#lxml библиотека

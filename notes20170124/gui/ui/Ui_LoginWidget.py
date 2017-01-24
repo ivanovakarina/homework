@@ -1,0 +1,91 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'login_widget.ui'
+#
+# Created by: PyQt5 UI code generator 5.7.1
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_LoginForm(object):
+    def setupUi(self, LoginForm):
+        LoginForm.setObjectName("LoginForm")
+        LoginForm.resize(380, 150)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(LoginForm.sizePolicy().hasHeightForWidth())
+        LoginForm.setSizePolicy(sizePolicy)
+        LoginForm.setMinimumSize(QtCore.QSize(380, 150))
+        LoginForm.setMaximumSize(QtCore.QSize(380, 150))
+        self.verticalLayout_2 = QtWidgets.QVBoxLayout(LoginForm)
+        self.verticalLayout_2.setObjectName("verticalLayout_2")
+        self.verticalLayout = QtWidgets.QVBoxLayout()
+        self.verticalLayout.setObjectName("verticalLayout")
+        self.horizontalLayout_2 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_2.setObjectName("horizontalLayout_2")
+        self.label_2 = QtWidgets.QLabel(LoginForm)
+        self.label_2.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.label_2.setObjectName("label_2")
+        self.horizontalLayout_2.addWidget(self.label_2)
+        spacerItem = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_2.addItem(spacerItem)
+        self.loginEdit = QtWidgets.QLineEdit(LoginForm)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.loginEdit.sizePolicy().hasHeightForWidth())
+        self.loginEdit.setSizePolicy(sizePolicy)
+        self.loginEdit.setMinimumSize(QtCore.QSize(270, 20))
+        self.loginEdit.setMaximumSize(QtCore.QSize(256, 20))
+        self.loginEdit.setMaxLength(32785)
+        self.loginEdit.setObjectName("loginEdit")
+        self.horizontalLayout_2.addWidget(self.loginEdit)
+        self.verticalLayout.addLayout(self.horizontalLayout_2)
+        self.horizontalLayout_3 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_3.setObjectName("horizontalLayout_3")
+        self.label = QtWidgets.QLabel(LoginForm)
+        self.label.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.label.setObjectName("label")
+        self.horizontalLayout_3.addWidget(self.label)
+        spacerItem1 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_3.addItem(spacerItem1)
+        self.passwordEdit = QtWidgets.QLineEdit(LoginForm)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.passwordEdit.sizePolicy().hasHeightForWidth())
+        self.passwordEdit.setSizePolicy(sizePolicy)
+        self.passwordEdit.setMinimumSize(QtCore.QSize(270, 20))
+        self.passwordEdit.setMaximumSize(QtCore.QSize(256, 20))
+        self.passwordEdit.setAutoFillBackground(False)
+        self.passwordEdit.setObjectName("passwordEdit")
+        self.horizontalLayout_3.addWidget(self.passwordEdit)
+        self.verticalLayout.addLayout(self.horizontalLayout_3)
+        self.verticalLayout_2.addLayout(self.verticalLayout)
+        spacerItem2 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.verticalLayout_2.addItem(spacerItem2)
+        self.horizontalLayout = QtWidgets.QHBoxLayout()
+        self.horizontalLayout.setObjectName("horizontalLayout")
+        spacerItem3 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout.addItem(spacerItem3)
+        self.okBtn = QtWidgets.QPushButton(LoginForm)
+        self.okBtn.setObjectName("okBtn")
+        self.horizontalLayout.addWidget(self.okBtn)
+        self.cancelBtn = QtWidgets.QPushButton(LoginForm)
+        self.cancelBtn.setObjectName("cancelBtn")
+        self.horizontalLayout.addWidget(self.cancelBtn)
+        self.verticalLayout_2.addLayout(self.horizontalLayout)
+
+        self.retranslateUi(LoginForm)
+        QtCore.QMetaObject.connectSlotsByName(LoginForm)
+
+    def retranslateUi(self, LoginForm):
+        _translate = QtCore.QCoreApplication.translate
+        LoginForm.setWindowTitle(_translate("LoginForm", "Form"))
+        self.label_2.setText(_translate("LoginForm", "Login"))
+        self.label.setText(_translate("LoginForm", "Password"))
+        self.okBtn.setText(_translate("LoginForm", "OK"))
+        self.cancelBtn.setText(_translate("LoginForm", "Cancel"))
+
